@@ -14,11 +14,13 @@
       return {
         swiperOption: {
           pagination: '.swiper-pagination',
+          autoplay: 3000,
+          loop: true,
           direction: 'horizontal',
           slidesPerView: 1,
           paginationClickable: true,
           spaceBetween: 30,
-          mousewheelControl: true
+          mousewheelControl: false
         }
       }
     },
