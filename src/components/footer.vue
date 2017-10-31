@@ -13,8 +13,6 @@
 		width:100%;
 		min-height:154px;
 		background: #282828;
-		position: absolute;
-		bottom:0px;
 	}
 	#footer img{
 		width:100px;

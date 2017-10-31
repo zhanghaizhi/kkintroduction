@@ -1,22 +1,15 @@
 <template>
   <swiper :options="swiperOption" class="swiper-box">
-    <swiper-slide class="swiper-item">Slide 1</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 2</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 3</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 4</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 5</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 6</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 7</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 8</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 9</swiper-slide>
-    <swiper-slide class="swiper-item">Slide 10</swiper-slide>
+    <swiper-slide v-for="item in imgdata" class="swiper-item">
+       <img :src="item">
+    </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
 </template>
-
 <script>
  import {swiper, swiperSlide} from 'vue-awesome-swiper'
   export default {
+    props:['imgdata'],
     data() {
       return {
         swiperOption: {
@@ -67,5 +60,8 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+  }
+  .swiper-pagination-bullet-active{
+    background:#91b521;
   }
 </style>

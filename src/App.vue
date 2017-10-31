@@ -1,8 +1,8 @@
 <template>
   <div id="app">
 	<vheader></vheader>
-	 <div id="mian"><router-view/></div>
-	<!-- <vfooter></vfooter> -->
+	 <div id="main"><router-view/> <vfooter></vfooter></div>
+	
   </div>
 </template>
 <script>
@@ -30,7 +30,10 @@ html, body{
   position: relative;
   height:100%;
   min-height: 600px;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
-
+#main{
+  overflow: scroll;
+  padding-bottom: 300px;
+}
 </style>

@@ -22,7 +22,7 @@
 </template>
 <script>
 	import {swiper, swiperSlide} from 'vue-awesome-swiper'
-	require('swiper/dist/css/swiper.css')
+	
 	export default{
 		name:'home',
 		data(){
