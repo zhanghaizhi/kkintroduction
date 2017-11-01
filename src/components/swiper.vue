@@ -44,6 +44,10 @@
     height: 100%;
     margin: 0 auto;
   }
+   .swiper-box  img{
+    width:100%;
+    display: block;
+   }
   .swiper-item {
     height: 100%;
     text-align: center;

@@ -1,5 +1,5 @@
 <template>
-	<div id="header">
+	<div id="header" class="hidden-xs-only">
 		<div id="nav">
 			<el-row>
 			    <el-col :span="8"><img class="logo" src="./../assets/logo.png"></el-col>
@@ -35,7 +35,7 @@
 	}
 	#nav{
 		height:100px;
-		width:1208px;
+		width:80%;
 		margin: 0 auto;
 	}
 	#nav .logo{

@@ -27,7 +27,7 @@
 		text-align: left;
 	}
 	.fcon{
-		width: 1208px;
+		width:80%;
 		margin:0 auto;
 		padding: 30px 0;
 		position: relative;
